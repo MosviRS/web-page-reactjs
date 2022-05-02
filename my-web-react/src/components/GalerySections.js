@@ -5,10 +5,13 @@ import sandImg from "../assets/img/sand.jpeg";
 import wallImg from "../assets/img/wall.jpeg";
 
 const StyleGalery = styled.div`
-  .galery-comtainer {
+  .galery-container {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    margin-top: 30px;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
   }
 `;
 
@@ -19,8 +22,8 @@ export default function GalerySection() {
       <p>Hecha un vistazo a nuestra galeria</p>
       <div className="galery-container">
         <CardGalery imgCard={wallImg} textGalery="Foto tomada en Guanajuato" />
-        <CardGalery imgCard={sunsetImg} textGalery="" />
-        <CardGalery imgCard={sandImg} textGalery="" />
+        <CardGalery imgCard={sunsetImg} textGalery="Foto tomada en Guanajuato" />
+        <CardGalery imgCard={sandImg} textGalery="Foto tomada en Guanajuato" />
       </div>
     </StyleGalery>
   );

@@ -11,6 +11,13 @@ const StyleSection = styled.div`
     display: flex;
     flex-direction: rows;
     justify-content: space-evenly;
+    text-align: center;
+    flex-wrap: wrap;
+    margin-top: 3.6rem;
+  }
+  h3 + p{
+    color: #774c4c;
+    text-align: center;
   }
 `;
 export default function SectionServices() {

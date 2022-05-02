@@ -2,7 +2,9 @@ import react from "react";
 import styled from "styled-components";
 import Button from "./Button";
 
-const StyleCardPrice = styled.div``;
+const StyleCardPrice = styled.div`
+ 
+`;
 
 export default function CardPrice({ titleBody, priceBody, options }) {
   return (
@@ -18,7 +20,7 @@ export default function CardPrice({ titleBody, priceBody, options }) {
           })}
         </ul>
         <Button 
-            btnText="Comprar"
+            btnText="Comprar ahora"
         />
       </div>
     </StyleCardPrice>
