@@ -22,16 +22,19 @@ export default function SectionPrices() {
           <h3>Tabla de Precios</h3>
           <div className="container-prices">
                 <CardPrice
+                    class="card"
                     titleBody="Basico"
                     priceBody="$10"
                     options={['Option1','Option2','Option3']}
                 />
                 <CardPrice
+                    class="card" 
                     titleBody="Basico"
                     priceBody="$10"
                     options={['Option1','Option2','Option3']}
                 />
                 <CardPrice
+                    class="card"
                     titleBody="Basico"
                     priceBody="$10"
                     options={['Option1','Option2','Option3']}

@@ -144,7 +144,7 @@ export default function NavMenu() {
         <div className="container-text">
           <h1>Las Mejores Soluciones para ti</h1>
           <h2>Bitsware</h2>
-          <Button btnText="Go" />
+          <Button fontSize= "1.5rem" btnText="Go" />
         </div>
         <div className="img-header">
           <img src={ImagePanel} alt=""></img>

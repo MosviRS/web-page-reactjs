@@ -8,7 +8,7 @@ const GlobalStyles = createGlobalStyle`
     }
     :root{
         --border: 1px dotted #585858;
-        --back: background: -webkit-linear-gradient(
+        --back: -webkit-linear-gradient(
             to right,
             #4a00e0,
             #8e2de2
@@ -18,6 +18,8 @@ const GlobalStyles = createGlobalStyle`
         --background-table: white;
         --color-price: #585858;
         --box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.75);
+        --back-card: rgba(75,0,224,0.698);
+        --back-table: #fff;
     }
     html{  
         font-family: 'Ruda', sans-serif;
