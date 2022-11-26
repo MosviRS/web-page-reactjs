@@ -7,10 +7,17 @@ import {
   faChartBar,
 } from "@fortawesome/free-solid-svg-icons";
 const StyleSection = styled.div`
-  .container-cards {
+  .cards-container {
     display: flex;
     flex-direction: rows;
     justify-content: space-evenly;
+    text-align: center;
+    flex-wrap: wrap;
+    margin-top: 3.6rem;
+  }
+  h3 + p{
+    color: #774c4c;
+    text-align: center;
   }
 `;
 export default function SectionServices() {
@@ -19,7 +26,7 @@ export default function SectionServices() {
       <section className="About">
         <h3>Tenemos asombrosos servicios</h3>
         <p>Todos nuestros servicios son los mejores</p>
-        <div className="container-cards">
+        <div className="cards-container">
           <CardService
             textTitle="Diseño Exlusivo"
             textBody="Los mejores diseños adaptados a tus necesidades"
