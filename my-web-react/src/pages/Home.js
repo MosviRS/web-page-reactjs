@@ -4,6 +4,7 @@ import SectionServices from "../components/SectionServices";
 import SectionFeatures from "../components/SectionFeactures";
 import GalerySection from "../components/GalerySections";
 import SectionPrices from "../components/SectionPrices";
+import SectionSlider from "../components/SectionSlider";
 const StyledHome = styled.div`
     padding: 50px 0;
     margin: auto;
@@ -19,6 +20,7 @@ export default function Home() {
           <SectionFeatures />
           <GalerySection />
           <SectionPrices/>
+          <SectionSlider/>
       </StyledHome>
     </div>
   );

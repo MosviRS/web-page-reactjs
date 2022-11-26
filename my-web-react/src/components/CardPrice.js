@@ -1,4 +1,4 @@
-import react from "react";
+import react,{ useState } from "react";
 import styled from "styled-components";
 import Button from "./Button";
 
@@ -11,6 +11,17 @@ const StyleCardPrice = styled.div`
     padding: 40px;
     box-shadow: var(--box-shadow);
     color: var(--color);
+    transform: scale(1);
+    transition: transform 0.5s;
+    :hover{
+      transform: scale(1.05);
+      border: 1px dotted #fff;
+      background-color: var(--back-card);
+      cursor:pointer;
+    }
+    :hover p{
+      color: #fff;
+    }
     h5{
       text-align:center;
       margin-bottom:10px;
@@ -35,8 +46,15 @@ const StyleCardPrice = styled.div`
 `;
 
 export default function CardPrice({ titleBody, priceBody, options }) {
+  const [hoverControl, setHoverControl] = useState(false);
+  const handleMouseOver = (e) => {
+    setHoverControl(true);
+  };
+  const handleMouseOut= (e) => {
+    setHoverControl(false);
+  }
   return (
-    <StyleCardPrice>
+    <StyleCardPrice onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
       <div>
         <h5>{titleBody}</h5>
         <p className="price">
@@ -50,6 +68,7 @@ export default function CardPrice({ titleBody, priceBody, options }) {
         <Button
             width="7rem"
             background="linear-gradient( to right, rgba(74,0,224,0.7), #8e2de2 );"
+            isHover={hoverControl}
             fontSize= "1rem" 
             btnText="Comprar ahora"
         />

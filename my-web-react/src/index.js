@@ -4,7 +4,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Typography from './styles/Typography';
 import GlobalStyles from './styles/GlobalStyles';
-
+import "swiper/css/bundle";
 ReactDOM.render(
   <>
     <GlobalStyles/>
